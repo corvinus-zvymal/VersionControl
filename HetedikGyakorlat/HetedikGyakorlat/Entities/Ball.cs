@@ -11,12 +11,17 @@ namespace HetedikGyakorlat.Entities
 {
     public class Ball : Toy
     {
+        public SolidBrush BallColor { get; set; }
+        public Ball(Color color)
+        {
+            BallColor = new SolidBrush(color);
+        }
 
         protected override void DrawImage(Graphics g)
         {
-            Brush ecset = new SolidBrush(Color.Blue);
+            
             g.FillEllipse(
-                ecset,
+                BallColor,
                 0,
                 0,
                 Width,

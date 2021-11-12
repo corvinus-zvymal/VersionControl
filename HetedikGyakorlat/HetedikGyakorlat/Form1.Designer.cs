@@ -37,6 +37,9 @@ namespace HetedikGyakorlat
             this.btnBall = new System.Windows.Forms.Button();
             this.lblNext = new System.Windows.Forms.Label();
             this.btnColor = new System.Windows.Forms.Button();
+            this.btnPresent = new System.Windows.Forms.Button();
+            this.btnColorBox = new System.Windows.Forms.Button();
+            this.btnRibbon = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -44,7 +47,7 @@ namespace HetedikGyakorlat
             this.mainPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.mainPanel.Location = new System.Drawing.Point(0, 88);
+            this.mainPanel.Location = new System.Drawing.Point(1, 107);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(596, 311);
             this.mainPanel.TabIndex = 0;
@@ -100,11 +103,45 @@ namespace HetedikGyakorlat
             this.btnColor.UseVisualStyleBackColor = false;
             this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
+            // btnPresent
+            // 
+            this.btnPresent.Location = new System.Drawing.Point(206, 12);
+            this.btnPresent.Name = "btnPresent";
+            this.btnPresent.Size = new System.Drawing.Size(87, 23);
+            this.btnPresent.TabIndex = 5;
+            this.btnPresent.Text = "PRESENT";
+            this.btnPresent.UseVisualStyleBackColor = true;
+            this.btnPresent.Click += new System.EventHandler(this.btnPresent_Click);
+            // 
+            // btnColorBox
+            // 
+            this.btnColorBox.BackColor = System.Drawing.Color.Red;
+            this.btnColorBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnColorBox.Location = new System.Drawing.Point(206, 41);
+            this.btnColorBox.Name = "btnColorBox";
+            this.btnColorBox.Size = new System.Drawing.Size(75, 23);
+            this.btnColorBox.TabIndex = 6;
+            this.btnColorBox.UseVisualStyleBackColor = false;
+            this.btnColorBox.Click += new System.EventHandler(this.btnColor_Click);
+            // 
+            // btnRibbon
+            // 
+            this.btnRibbon.BackColor = System.Drawing.Color.Yellow;
+            this.btnRibbon.Location = new System.Drawing.Point(206, 70);
+            this.btnRibbon.Name = "btnRibbon";
+            this.btnRibbon.Size = new System.Drawing.Size(75, 23);
+            this.btnRibbon.TabIndex = 7;
+            this.btnRibbon.UseVisualStyleBackColor = false;
+            this.btnRibbon.Click += new System.EventHandler(this.btnColor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRibbon);
+            this.Controls.Add(this.btnColorBox);
+            this.Controls.Add(this.btnPresent);
             this.Controls.Add(this.btnColor);
             this.Controls.Add(this.lblNext);
             this.Controls.Add(this.btnBall);
@@ -126,6 +163,9 @@ namespace HetedikGyakorlat
         private System.Windows.Forms.Button btnBall;
         private System.Windows.Forms.Label lblNext;
         private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnPresent;
+        private System.Windows.Forms.Button btnColorBox;
+        private System.Windows.Forms.Button btnRibbon;
     }
 }
 

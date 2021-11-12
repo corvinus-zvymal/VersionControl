@@ -68,7 +68,11 @@ namespace HetedikGyakorlat
 
         private void btnBall_Click(object sender, EventArgs e)
         {
-            ToyFactory = new BallFactory();
+            ToyFactory = new BallFactory()
+            {
+                BallColor=btnColor.BackColor,
+            };
+            
         }
 
         private void DisplayNext()
@@ -91,6 +95,15 @@ namespace HetedikGyakorlat
             if (cd.ShowDialog() != DialogResult.OK)
                 return;
             button.BackColor = cd.Color;
+        }
+
+        private void btnPresent_Click(object sender, EventArgs e)
+        {
+            ToyFactory = new PresentFactory()
+            {
+                BoxColor = btnColorBox.BackColor,
+                RibbonColor = btnRibbon.BackColor
+            };
         }
     }
 }
