@@ -36,6 +36,7 @@ namespace HetedikGyakorlat
             this.btnCar = new System.Windows.Forms.Button();
             this.btnBall = new System.Windows.Forms.Button();
             this.lblNext = new System.Windows.Forms.Label();
+            this.btnColor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mainPanel
@@ -62,7 +63,7 @@ namespace HetedikGyakorlat
             // 
             // btnCar
             // 
-            this.btnCar.Location = new System.Drawing.Point(117, 13);
+            this.btnCar.Location = new System.Drawing.Point(30, 12);
             this.btnCar.Name = "btnCar";
             this.btnCar.Size = new System.Drawing.Size(75, 23);
             this.btnCar.TabIndex = 1;
@@ -72,7 +73,7 @@ namespace HetedikGyakorlat
             // 
             // btnBall
             // 
-            this.btnBall.Location = new System.Drawing.Point(324, 12);
+            this.btnBall.Location = new System.Drawing.Point(125, 12);
             this.btnBall.Name = "btnBall";
             this.btnBall.Size = new System.Drawing.Size(75, 23);
             this.btnBall.TabIndex = 2;
@@ -83,17 +84,28 @@ namespace HetedikGyakorlat
             // lblNext
             // 
             this.lblNext.AutoSize = true;
-            this.lblNext.Location = new System.Drawing.Point(536, 18);
+            this.lblNext.Location = new System.Drawing.Point(340, 18);
             this.lblNext.Name = "lblNext";
             this.lblNext.Size = new System.Drawing.Size(85, 17);
             this.lblNext.TabIndex = 3;
             this.lblNext.Text = "Coming next";
+            // 
+            // btnColor
+            // 
+            this.btnColor.BackColor = System.Drawing.Color.Blue;
+            this.btnColor.Location = new System.Drawing.Point(125, 41);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(75, 23);
+            this.btnColor.TabIndex = 4;
+            this.btnColor.UseVisualStyleBackColor = false;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnColor);
             this.Controls.Add(this.lblNext);
             this.Controls.Add(this.btnBall);
             this.Controls.Add(this.btnCar);
@@ -113,6 +125,7 @@ namespace HetedikGyakorlat
         private System.Windows.Forms.Button btnCar;
         private System.Windows.Forms.Button btnBall;
         private System.Windows.Forms.Label lblNext;
+        private System.Windows.Forms.Button btnColor;
     }
 }
 
