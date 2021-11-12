@@ -5,23 +5,14 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace HetedikGyakorlat.Entities
 {
-    public class Ball : Toy
+    class Car : Toy
     {
-
         protected override void DrawImage(Graphics g)
         {
-            Brush ecset = new SolidBrush(Color.Blue);
-            g.FillEllipse(
-                ecset,
-                0,
-                0,
-                Width,
-                Height);
+            throw new NotImplementedException();
         }
-
     }
 }

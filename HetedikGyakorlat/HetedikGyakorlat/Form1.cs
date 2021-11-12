@@ -44,7 +44,7 @@ namespace HetedikGyakorlat
             
             foreach (var item in _balls)
             {
-                item.MoveBall();
+                item.MoveToy();
                 if (item.Left > lastPosition)
                 {
                     lastPosition = item.Left;
