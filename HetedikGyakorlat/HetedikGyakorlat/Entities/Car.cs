@@ -12,7 +12,8 @@ namespace HetedikGyakorlat.Entities
     {
         protected override void DrawImage(Graphics g)
         {
-            throw new NotImplementedException();
+            var image = Image.FromFile(@"Images\car.png");
+            g.DrawImage(image, 0, 0, Width, Height);
         }
     }
 }
