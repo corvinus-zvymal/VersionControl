@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace HetedikGyakorlat.Entities
 {
-    public class BallFactory : IToyFactory
+    public class CarFactory : IToyFactory
     {
         public Toy CreateNew()
         {
-            return new Ball();
+            return new Car();
         }
     }
 }
