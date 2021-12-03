@@ -16,5 +16,7 @@ namespace HetedikGyakorlat.Entities
         {
            return new Present(BoxColor, RibbonColor);
         }
+      
+
     }
 }
