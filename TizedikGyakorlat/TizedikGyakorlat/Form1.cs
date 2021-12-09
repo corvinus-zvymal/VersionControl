@@ -58,6 +58,7 @@ namespace TizedikGyakorlat
                           select p;
             if (winners.Count() > 0)
             {
+                button1.Visible = true;
                 winnerBrain = winners.FirstOrDefault().Brain.Clone();
                 gc.GameOver -= Gc_GameOver;
                 return;
@@ -80,5 +81,13 @@ namespace TizedikGyakorlat
             gc.Start();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            gc.ResetCurrentLevel();
+            gc.AddPlayer(winnerBrain.Clone());
+            gc.AddPlayer();
+            ga.Focus();
+            gc.Start(true);
+        }
     }
 }
