@@ -23,6 +23,8 @@ namespace TizedikGyakorlat
             InitializeComponent();
 
             ga = gc.ActivateDisplay();
+            gc.AddPlayer();
+            gc.Start(true);
             this.Controls.Add(ga);
         }
     }
